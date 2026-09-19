@@ -1,0 +1,42 @@
+{
+  "name": "agent-run-guard",
+  "version": "0.2.1",
+  "type": "module",
+  "description": "Cross-harness runtime guard that blocks runaway agent behaviour (repeats, budgets, error storms, dangerous commands). Dependency-free, stdlib-only.",
+  "keywords": [
+    "agent",
+    "guardrails",
+    "opencode",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "crush",
+    "rate-limit",
+    "runtime-guard"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaboumou/agent-run-guard"
+  },
+  "homepage": "https://github.com/kaboumou/agent-run-guard",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "agent-run-guard": "./bin/guard.js"
+  },
+  "files": [
+    "bin/",
+    "core/",
+    "adapters/",
+    "plugin/",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/guard.test.mjs tests/near.test.mjs tests/budgets.test.mjs tests/errorstorm.test.mjs tests/dangerous.test.mjs tests/harness-map.test.mjs tests/core-extras.test.mjs tests/opencode.test.mjs tests/cli-regressions.test.mjs tests/config-validate.test.mjs tests/detection.test.mjs tests/concurrency.test.mjs tests/result-dedupe.test.mjs tests/opencode-v2.test.mjs"
+  },
+  "dependencies": {}
+}
