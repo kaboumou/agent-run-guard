@@ -43,6 +43,20 @@ length, and pattern ids. State files carry deterministic hash keys
 
 ## Install per harness
 
+Install the published npm package (Node.js 18 or newer):
+
+```sh
+npm i -g agent-run-guard@0.2.1
+```
+
+This installs the `agent-run-guard` hook command. Configure the appropriate
+harness below; installation alone does not activate hooks.
+For adapter paths inside a project, use `npm i agent-run-guard@0.2.1` and
+replace `<GUARD>` with the absolute path to
+`<PROJECT>/node_modules/agent-run-guard`.
+
+Package: https://www.npmjs.com/package/agent-run-guard
+
 From source: `git clone https://github.com/kaboumou/agent-run-guard`.
 Replace `<GUARD>` with the absolute path of the checkout, or install the
 packed tarball (`npm pack` output) and use
