@@ -41,6 +41,12 @@ nor in state files. Logs carry the tool name, a short hash fingerprint +
 length, and pattern ids. State files carry deterministic hash keys
 (`ex@…`/`nx@…`/`rid@…`) + counters only.
 
+## Try a reproducible check
+
+[Run the synthetic repeat-call demonstration](https://kaboumou.github.io/agent-run-inspector-docs/guard.html)
+with the released npm package: two allowed calls, then a denied third call.
+This tests the CLI mapping; it does not certify that your host invokes hooks.
+
 ## Install per harness
 
 Install the published npm package (Node.js 18 or newer):
